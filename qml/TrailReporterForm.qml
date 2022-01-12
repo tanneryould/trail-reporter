@@ -12,7 +12,7 @@
 
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import Esri.trail-reporter 1.0
+import Esri.TrailReporter 1.0
 
 Item {
 
@@ -25,7 +25,7 @@ Item {
     }
 
     // Declare the C++ instance which creates the map etc. and supply the view
-    Trail-reporter {
+    TrailReporter {
         id: model
         mapView: view
     }

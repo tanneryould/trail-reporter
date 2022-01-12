@@ -24,15 +24,15 @@ class MapQuickView;
 
 #include <QObject>
 
-class Trail-reporter : public QObject
+class TrailReporter : public QObject
 {
   Q_OBJECT
 
   Q_PROPERTY(Esri::ArcGISRuntime::MapQuickView* mapView READ mapView WRITE setMapView NOTIFY mapViewChanged)
 
 public:
-  explicit Trail-reporter(QObject* parent = nullptr);
-  ~Trail-reporter() override;
+  explicit TrailReporter(QObject* parent = nullptr);
+  ~TrailReporter() override;
 
 signals:
   void mapViewChanged();

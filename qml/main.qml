@@ -11,14 +11,14 @@
 //
 
 import QtQuick.Controls 2.12
-import Esri.trail-reporter 1.0
+import Esri.TrailReporter 1.0
 
 ApplicationWindow {
     visible: true
     width: 800
     height: 600
 
-    Trail-reporterForm {
+    TrailReporterForm {
         anchors.fill: parent
     }
 }

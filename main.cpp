@@ -10,7 +10,7 @@
 // See the Sample code usage restrictions document for further information.
 //
 
-#include "Trail-reporter.h"
+#include "TrailReporter.h"
 
 #include "ArcGISRuntimeEnvironment.h"
 #include "MapQuickView.h"
@@ -57,10 +57,10 @@ int main(int argc, char *argv[])
   // ArcGISRuntimeEnvironment::setLicense("Place license string in here");
 
   // Register the map view for QML
-  qmlRegisterType<MapQuickView>("Esri.trail-reporter", 1, 0, "MapView");
+  qmlRegisterType<MapQuickView>("Esri.TrailReporter", 1, 0, "MapView");
 
-  // Register the Trail-reporter (QQuickItem) for QML
-  qmlRegisterType<Trail-reporter>("Esri.trail-reporter", 1, 0, "Trail-reporter");
+  // Register the TrailReporter (QQuickItem) for QML
+  qmlRegisterType<TrailReporter>("Esri.TrailReporter", 1, 0, "TrailReporter");
 
   // Initialize application view
   QQmlApplicationEngine engine;
