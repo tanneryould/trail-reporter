@@ -16,13 +16,11 @@
 #include "Map.h"
 #include "MapQuickView.h"
 
-#include <QUrl>
-
 using namespace Esri::ArcGISRuntime;
 
 TrailReporter::TrailReporter(QObject* parent /* = nullptr */):
   QObject(parent),
-  m_map(new Map(BasemapStyle::ArcGISTopographic, this))
+  m_map(new Map(QUrl("https://arcgis.com/sharing/rest/content/items/186a508ccae04d6f84854e48a765b4ac"), this))
 {
 }
 

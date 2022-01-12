@@ -23,6 +23,7 @@ class MapQuickView;
 }
 
 #include <QObject>
+#include <QUrl>
 
 class TrailReporter : public QObject
 {
